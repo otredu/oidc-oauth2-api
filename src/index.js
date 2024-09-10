@@ -65,6 +65,7 @@ function hasScope(requiredScope) {
 
 // endpoint to return all to dos
 app.get('/', hasScope('read:to-dos'), (req, res) => {
+  console.log('tänne tuli');
   res.send(toDos);
 });
 
